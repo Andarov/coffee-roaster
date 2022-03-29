@@ -58,9 +58,9 @@ a {
 
 .container {
     width: 100%;
-    max-width: 1500px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -76,12 +76,13 @@ a {
 
 .site-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 50px;
+    padding: 40px 30px;
 }
 
 .logo-link {
-    margin-right: auto;
+    margin-right: 10px;
 }
 
 .logo {
@@ -91,10 +92,18 @@ a {
 }
 
 .sitenav-items {
+    display: flex;
+    align-items: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .sitenav-item {
+    flex-shrink: 0;
+}
+
+.sitenav-item-link {
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
@@ -103,19 +112,20 @@ a {
     color: #333;
 }
 
-.sitenav-item-link:not(:last-child) {
+.sitenav-item:not(:last-child) {
     margin-right: 40px;
 }
 
 .header-bottom {
+    width: 1420px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-left: 150px;
 }
 
 .header-bottom-box {
     width: 464px;
+    padding-top: 116px;
 }
 
 .header-bottom-box-heading {
@@ -153,4 +163,61 @@ a {
 .header-bottom-img {
     width: 710px;
     height: 696px;
+}
+
+/* COLLECTION */
+.collection {
+    background-color: #f8f8f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.collection-heading {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+.collection-boxes {
+    width: 100%;
+    max-width: 1114px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.collection-box {
+    display: flex;
+    align-items: center;
+}
+
+.collection-box-content-right {
+    margin-left: 117px;
+    margin-right: 157px;
+}
+
+.collection-box-content-left {
+    margin-right: 117px;
+    margin-left: 157px;
+}
+
+.collection-box-heading {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.collection-box-text {
+    font-size: 22px;
+    line-height: 34px;
+    margin: 0;
 }
