@@ -40,7 +40,7 @@ body {
     background-color: #fff;
     font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     color: #333;
@@ -72,6 +72,7 @@ a {
 /* HEADER */
 .header {
     background-color: #f3d7b7;
+    background-image: url(../img/header-bg.jpg);
 }
 
 .site-header {
@@ -82,13 +83,14 @@ a {
 }
 
 .logo-link {
+    display: flex;
+    flex-shrink: 0;
     margin-right: 10px;
 }
 
 .logo {
-    display: block;
     width: 235px;
-    height: 24px;    
+    height: 24px;
 }
 
 .sitenav-items {
@@ -138,7 +140,6 @@ a {
 }
 
 .header-bottom-box-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
@@ -168,6 +169,7 @@ a {
 /* COLLECTION */
 .collection {
     background-color: #f8f8f2;
+    background-image: url(../img/collection-bg.jpg);
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 20px;
@@ -208,6 +210,14 @@ a {
     margin-left: 157px;
 }
 
+.collection-box-content-one {
+    margin-right: 94px;
+}
+
+.collection-box-content-four {
+    margin-right: 97px;
+}
+
 .collection-box-heading {
     font-weight: 500;
     font-size: 48px;
@@ -220,4 +230,72 @@ a {
     font-size: 22px;
     line-height: 34px;
     margin: 0;
+}
+
+/* CHOOSE */
+.choose {
+    background-image: url(../img/choose-bg.jpg);
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 80px;
+}
+
+.choose-content {
+    width: 581px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.choose-content-heading {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.choose-content-text {
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.choose-boxes {
+    display: flex;
+    margin-left: -20px;
+}
+
+.choose-box {
+    width: 433px;
+    margin-left: 20px;
+}
+
+.choose-box-img {
+    width: 433px;
+    height: 500px;
+    margin-bottom: 28px;
+}
+
+.choose-box-heading {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.choose-box-text {
+    width: 377px;
+    color: #333;
+    margin: 0;
+}
+
+.choose-box-text-three {
+    width: 334px;
 }
