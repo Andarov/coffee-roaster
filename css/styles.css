@@ -377,3 +377,38 @@ a {
 .how-work-main-link {
     background-color: #c99b67;
 }
+
+/* FOOTER */
+.site-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.site-footer-items {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sitenav-item-footer-link {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-link:not(:last-child) {
+    margin-right: 30px;
+}
+
+.link-logo {
+    display: block;
+}
