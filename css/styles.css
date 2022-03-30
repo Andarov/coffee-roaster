@@ -468,3 +468,25 @@ a {
 .link-logo {
     display: block;
 }
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .header {
+        background-image: url("../img/header-bg@2x.jpg");
+    }
+    .collection {
+        background-image: url("../img/collection-bg@2x.jpg");
+    }
+    .choose {
+        background-image: url("../img/choose-bg@2x.jpg");
+    }
+    .how-work {
+        background-image: url("../img/how-work@2x.jpg");
+    }
+
+}
