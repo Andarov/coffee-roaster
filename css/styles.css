@@ -33,6 +33,15 @@ html {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: 3px dashed #0a775f;
+    outline-offset: 3px;
+}
+
+.how-work-main-link:focus {
+    outline: 3px dashed #fff;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -91,6 +100,15 @@ a {
 .logo {
     width: 235px;
     height: 24px;
+    transition: 0.4s ease opacity;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
 }
 
 .sitenav-items {
@@ -112,6 +130,15 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #333;
+    transition: 0.4s ease color;
+}
+
+.sitenav-item-link:hover {
+    color: #0a775f;
+}
+
+.sitenav-item-link:active {
+    opacity: 0.6;
 }
 
 .sitenav-item:not(:last-child) {
@@ -159,6 +186,15 @@ a {
     padding: 16px 24px;
     background-color: #0a775f;
     border-radius: 100px;
+    transition: background-color 0.4s ease;
+}
+
+.main-link:hover {
+    background-color: rgba(10, 119, 95, 0.8);
+}
+
+.main-link:active {
+    background-color: rgba(10, 119, 95, 0.6);
 }
 
 .header-bottom-img {
@@ -378,6 +414,14 @@ a {
     background-color: #c99b67;
 }
 
+.how-work-main-link:hover {
+    background-color: #0a1100;
+}
+
+.how-work-main-link:active {
+    opacity: 0.6;
+}
+
 /* FOOTER */
 .site-footer-content {
     display: flex;
@@ -407,6 +451,18 @@ a {
 
 .footer-link:not(:last-child) {
     margin-right: 30px;
+}
+
+.footer-link svg {
+    color: #333;
+}
+
+.footer-link svg:hover {
+    color: #0a775f;
+}
+
+.footer-link {
+    display: flex;
 }
 
 .link-logo {
