@@ -219,6 +219,7 @@ a {
     text-align: center;
     color: #000000;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .collection-boxes {
@@ -258,6 +259,7 @@ a {
     font-weight: 500;
     font-size: 48px;
     line-height: 56px;
+    text-transform: uppercase;
     margin: 0;
     margin-bottom: 10px;
 }
@@ -292,6 +294,7 @@ a {
     line-height: 59px;
     margin: 0;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .choose-content-text {
@@ -324,6 +327,7 @@ a {
     color: #333;
     margin: 0;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .choose-box-text {
@@ -394,12 +398,13 @@ a {
 }
 
 .how-work-box-content-heading {
-    width: 231px;
+    width: 250px;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
     margin: 0;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .how-work-box-content-text {
@@ -448,6 +453,7 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-left: 10px;
 }
 
 .footer-link:not(:last-child) {
@@ -531,7 +537,7 @@ a {
     padding-bottom: 90px;
 }
 
-.choose-content {
+.about-choose-content {
     width: 639px;
     text-align: left;
     padding: 0;
