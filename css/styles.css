@@ -438,8 +438,8 @@ a {
 }
 
 .site-footer-items {
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 331px;
+    margin-left: 246px;
 }
 
 .sitenav-item-footer-link {
@@ -453,7 +453,6 @@ a {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-left: 10px;
 }
 
 .footer-link:not(:last-child) {
