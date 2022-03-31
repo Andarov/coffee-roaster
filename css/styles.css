@@ -149,7 +149,7 @@ a {
     width: 1420px;
     display: flex;
     justify-content: space-between;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 
 .header-bottom-box {
@@ -376,6 +376,7 @@ a {
     margin-bottom: 20px;
 }
 
+
 .how-work-box-content {
     display: flex;
     flex-direction: column;
@@ -468,6 +469,142 @@ a {
 .link-logo {
     display: block;
 }
+
+/* ABOUT */
+.about-header-bottom-box {
+    width: 372px;
+}
+
+.about-header-bottom-img {
+    height: 596px;
+}
+
+/* COLLECTION */
+.about-collection-boxes {
+    width: 100%;
+    max-width: 1171px;
+    margin-left: 165px;
+    margin-right: 64px;
+}
+
+.about-collection {
+    margin-bottom: 80px;
+    padding: 0;
+}
+
+.about-collection-box {
+    align-items: flex-start;
+    padding-top: 160px;
+    padding-bottom: 200px;
+}
+
+.about-collection-box-img {
+    width: 360px;
+    height: 364px;
+}
+
+.about-collection-box-heading {
+    margin-bottom: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.about-collection-box-content {
+    width: 626px;
+    margin-left: 185px;
+    margin-right: 0;
+}
+
+/* CHOOSE */
+.about-choose {
+    padding: 0;
+}
+
+.choose-main {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1227px;
+    margin-left: 143px;
+    margin-right: 30px;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.choose-content {
+    width: 639px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.about-choose-content-heading {
+    margin-bottom: 24px;
+}
+
+.about-choose-content-text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-choose-box-img {
+    width: 550px;
+}
+
+/* HOW-WORK */
+.about-how-work {
+    padding-bottom: 100px;
+}
+
+.about-how-work-boxes {
+    margin-bottom: 0;
+}
+
+.about-how-work-box::before {
+    display: none;
+}
+
+.about-how-work-box-content {
+    flex-direction: unset;
+    vertical-align: top;
+    padding: 40px 55px 40px 20px;
+}
+
+.about-how-work-box-content::before {
+    display: none;
+}
+
+.about-how-work-box-content-text {
+    width: 178px;
+    margin-top: 187px;
+    margin-right: 60px;
+}
+
+.about-how-work-box-content-text-uk {
+    margin-top: 140px;
+    margin-right: 60px;
+}
+
+.about-how-work-box-content-heading {
+    width: 0;
+}
+
+.uk-img {
+    width: 120px;
+    height: 143px;
+}
+
+.canada-img {
+    width: 120px;
+    height: 120px;
+}
+
+.australia-img {
+    width: 120px; 
+    height: 107px;
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
