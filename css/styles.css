@@ -521,6 +521,11 @@ a {
     color: #000;
 }
 
+.about-collection-box-text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .about-collection-box-content {
     width: 626px;
     margin-left: 185px;
