@@ -483,6 +483,10 @@ a {
     width: 372px;
 }
 
+.about-header-bottom-box-text {
+    margin-bottom: 0;
+}
+
 .about-header-bottom-img {
     height: 596px;
 }
