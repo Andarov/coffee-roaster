@@ -535,7 +535,9 @@ a {
 
 /* CHOOSE */
 .about-choose {
+    background-repeat: repeat-y;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .choose-main {
@@ -544,7 +546,6 @@ a {
     max-width: 1227px;
     margin-left: 143px;
     margin-right: 30px;
-    display: flex;
     padding-top: 100px;
     padding-bottom: 90px;
 }
@@ -568,6 +569,7 @@ a {
 
 .about-choose-box-img {
     width: 550px;
+    margin-bottom: 0;
 }
 
 /* HOW-WORK */
