@@ -640,6 +640,10 @@ a {
     width: 372px;
 }
 
+.header-bottom-box-text {
+    margin: 0;
+}
+
 .plan-header-bottom-img {
     height: 596px;
 }
@@ -817,6 +821,15 @@ a {
     display: flex;
     margin-left: auto;
     border: 0;
+}
+
+.radio {
+    display: none;
+}
+
+.radio:checked ~ .selection-content {
+    background-color: #0a775f;
+    color: darkmagenta;
 }
 
 @media

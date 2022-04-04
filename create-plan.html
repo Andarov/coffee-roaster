@@ -33,7 +33,7 @@
             <div class="header-bottom">
                 <div class="header-bottom-box plan-header-bottom-box">
                     <h2 class="header-bottom-box-heading">Create plan</h2>
-                    <p class="header-bottom-box-text">Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.</p>
+                    <p class="header-bottom-box-text plan-header-bottom-box-text">Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.</p>
                 </div>
                 <img class="header-bottom-img plan-header-bottom-img" src="img/picture-coffee.jpg" alt="pictur coffee" width="710" height="596" srcset="img/picture-coffee.jpg 1x, img/picture-coffee@2x.jpg 2x">
             </div>
@@ -81,114 +81,176 @@
                     </div>
                     
                     <!-- SELECTED-CARD -->
-                    <section class="selection-cards">
-                        <div class="selection-card">
-                            <div class="selection-card-header" id="preferences">
-                                <h3 class="questions-consumer-heading">How do you drink your coffee?</h3>
-                                <button class="down-icon"></button>
-                            </div>
-                            <div class="selections selections-open">
-                                <div class="selection">
-                                    <h4 class="selection-heading">Capsule</h4>
-                                    <p class="selection-text">Compatible with Nespresso systems and similar brewers</p>
+                    <form action="">
+                        <section class="selection-cards">
+                            <div class="selection-card">
+                                <div class="selection-card-header" id="preferences">
+                                    <h3 class="questions-consumer-heading">How do you drink your coffee?</h3>
+                                    <button class="down-icon"></button>
                                 </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Filter</h4>
-                                    <p class="selection-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Espresso</h4>
-                                    <p class="selection-text">Dense and finely ground beans for an intense, flavorful experience</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="selection-card">
-                            <div class="selection-card-header" id="bean-type">
-                                <h3 class="questions-consumer-heading">What type of coffee?</h3>
-                                <button class="down-icon"></button>
-                            </div>
-                            <div class="selections">
-                                <div class="selection">
-                                    <h4 class="selection-heading">Single Origin</h4>
-                                    <p class="selection-text">Distinct, high quality coffee from a specific family-owned farm</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Decaf</h4>
-                                    <p class="selection-text">Just like regular coffee, except the caffeine has been removed</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Blended</h4>
-                                    <p class="selection-text">Combination of two or three dark roasted beans of organic coffees</p>
+                                <div class="selections selections-open">
+                                    <label class="selection" for="capsule">
+                                        <input class="radio" type="radio" name="how-drink" value="capsule" id="capsule">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Capsule</h4>
+                                                <p class="selection-text">Compatible with Nespresso systems and similar brewers</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="filter">
+                                        <input class="radio" type="radio" name="how-drink" value="filter" id="filter">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Filter</h4>
+                                                <p class="selection-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="espresso">
+                                        <input class="radio" type="radio" name="how-drink" value="espresso" id="espresso">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Espresso</h4>
+                                                <p class="selection-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                                            </span>
+                                        </input>
+                                    </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="selection-card">
-                            <div class="selection-card-header" id="quanity">
-                                <h3 class="questions-consumer-heading">How much would you like?</h3>
-                                <button class="down-icon"></button>
-                            </div>
-                            <div class="selections">
-                                <div class="selection">
-                                    <h4 class="selection-heading">250g</h4>
-                                    <p class="selection-text">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                            <div class="selection-card">
+                                <div class="selection-card-header" id="bean-type">
+                                    <h3 class="questions-consumer-heading">What type of coffee?</h3>
+                                    <button class="down-icon"></button>
                                 </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">500g</h4>
-                                    <p class="selection-text">Perfect option for a couple. Yields about 40 delectable cups.</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">1000g</h4>
-                                    <p class="selection-text">Perfect for offices and events. Yields about 90 delightful cups.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="selection-card">
-                            <div class="selection-card-header" id="grind-option">
-                                <h3 class="questions-consumer-heading">Want us to grind them?</h3>
-                                <button class="down-icon"></button>
-                            </div>
-                            <div class="selections">
-                                <div class="selection">
-                                    <h4 class="selection-heading">Wholebean</h4>
-                                    <p class="selection-text">Best choice if you cherish the full sensory experience</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Filter</h4>
-                                    <p class="selection-text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Cafetiére</h4>
-                                    <p class="selection-text">Course ground beans specially suited for french press coffee</p>
+                                <div class="selections">
+                                    <label class="selection" for="origin">
+                                        <input class="radio" type="radio" name="type" value="origin" id="origin">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Single Origin</h4>
+                                                <p class="selection-text">Distinct, high quality coffee from a specific family-owned farm</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="decaf">
+                                        <input class="radio" type="radio" name="type" value="decaf" id="decaf">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Decaf</h4>
+                                                <p class="selection-text">Just like regular coffee, except the caffeine has been removed</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="blended">
+                                        <input class="radio" type="radio" name="type" value="blended" id="blended">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Blended</h4>
+                                                <p class="selection-text">Combination of two or three dark roasted beans of organic coffees</p>
+                                            </span>
+                                        </input>
+                                    </label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="selection-card-last-child">
-                            <div class="selection-card-header" id="deliveries">
-                                <h3 class="questions-consumer-heading">How often should we deliver?</h3>
-                                <button class="down-icon"></button>
+                            <div class="selection-card">
+                                <div class="selection-card-header" id="quanity">
+                                    <h3 class="questions-consumer-heading">How much would you like?</h3>
+                                    <button class="down-icon"></button>
+                                </div>
+                                <div class="selections">
+                                    <label class="selection" for="250g">
+                                        <input class="radio" type="radio" name="how-much" value="250g" id="250g">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">250g</h4>
+                                                <p class="selection-text">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="500g">
+                                        <input class="radio" type="radio" name="how-much" value="500g" id="500g">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">500g</h4>
+                                                <p class="selection-text">Perfect option for a couple. Yields about 40 delectable cups.</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="1000g">
+                                        <input class="radio" type="radio" name="how-much" value="1000g" id="1000g">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">1000g</h4>
+                                                <p class="selection-text">Perfect for offices and events. Yields about 90 delightful cups.</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="selections">
-                                <div class="selection">
-                                    <h4 class="selection-heading">Every week</h4>
-                                    <p class="selection-text">$7.20 per shipment. Includes free first-class shipping.</p>
+                            <div class="selection-card">
+                                <div class="selection-card-header" id="grind-option">
+                                    <h3 class="questions-consumer-heading">Want us to grind them?</h3>
+                                    <button class="down-icon"></button>
                                 </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Every 2 weeks</h4>
-                                    <p class="selection-text">$9.60 per shipment. Includes free priority shipping.</p>
-                                </div>
-                                <div class="selection">
-                                    <h4 class="selection-heading">Every month</h4>
-                                    <p class="selection-text">$12.00 per shipment. Includes free priority shipping.</p>
+                                <div class="selections">
+                                    <label class="selection" for="wholebean">
+                                        <input class="radio" type="radio" name="grind" value="wholebean" id="wholebean">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Wholebean</h4>
+                                                <p class="selection-text">Best choice if you cherish the full sensory experience</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="filter">
+                                        <input class="radio" type="radio" name="grind" value="filter" id="filter">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Filter</h4>
+                                                <p class="selection-text">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="cafetiere">
+                                        <input class="radio" type="radio" name="grind" value="cafetere" id="cafetiere">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Cafetiére</h4>
+                                                <p class="selection-text">Course ground beans specially suited for french press coffee</p>
+                                            </span>
+                                        </input>
+                                    </label>
                                 </div>
                             </div>
-                        </div>
-                        <!-- ORDER-SUMMARY -->
-                        <div class="order-summery">
-                            <h3 class="order-summary-heading">Order Summary</h3>
-                            <div class="order-summary-text">“I drink my coffee using _____, with a _____ type of bean. _____ , sent to me _____.”</div>
-                        </div>
-                        <button class="main-link btn-main-link">Create me plan</button>
-                    </section>
+                            <div class="selection-card-last-child">
+                                <div class="selection-card-header" id="deliveries">
+                                    <h3 class="questions-consumer-heading">How often should we deliver?</h3>
+                                    <button class="down-icon"></button>
+                                </div>
+                                <div class="selections">
+                                    <label class="selection" for="every-week">
+                                        <input class="radio" type="radio" name="how-often" value="every-week" id="every-week">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Every week</h4>
+                                                <p class="selection-text">$7.20 per shipment. Includes free first-class shipping.</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="every-2-week">
+                                        <input class="radio" type="radio" name="how-often" value="every-2-week" id="every-2-week">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Every 2 weeks</h4>
+                                                <p class="selection-text">$9.60 per shipment. Includes free priority shipping.</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                    <label class="selection" for="every-month">
+                                        <input class="radio" type="radio" name="how-often" value="every-month" id="every-month">
+                                            <span class="selection-content">
+                                                <h4 class="selection-heading">Every month</h4>
+                                                <p class="selection-text">$12.00 per shipment. Includes free priority shipping.</p>
+                                            </span>
+                                        </input>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- ORDER-SUMMARY -->
+                            <div class="order-summery">
+                                <h3 class="order-summary-heading">Order Summary</h3>
+                                <div class="order-summary-text">“I drink my coffee using _____ , with a _____ type of bean. _____ , sent to me _____.”</div>
+                            </div>
+                            <button type="submit" class="main-link btn-main-link">Create me plan</button>
+                        </section>
+                    </form>
 
                 </div>
             </div>
