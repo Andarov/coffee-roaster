@@ -146,6 +146,7 @@ a {
 }
 
 .header-bottom {
+    position: relative;
     width: 1420px;
     display: flex;
     justify-content: space-between;
@@ -204,6 +205,7 @@ a {
 
 /* COLLECTION */
 .collection {
+    position: relative;
     background-color: #f8f8f2;
     background-image: url(../img/collection-bg.jpg);
     padding-top: 50px;
@@ -272,6 +274,7 @@ a {
 
 /* CHOOSE */
 .choose {
+    position: relative;
     background-image: url(../img/choose-bg.jpg);
     background-repeat: no-repeat;
     padding-left: 30px;
@@ -342,6 +345,7 @@ a {
 
 /* HOW-WORK */
 .how-work {
+    position: relative;
     background-color: #0a775f;
     background-image: url(../img/how-work.jpg);
     background-repeat: no-repeat;
@@ -493,10 +497,11 @@ a {
 
 /* COLLECTION */
 .about-collection-boxes {
+    position: relative;
     width: 100%;
     max-width: 1171px;
     margin-left: 165px;
-    margin-right: 64px;
+    padding-right: 64px;
     margin-top: 0;
 }
 
@@ -660,16 +665,16 @@ a {
 
 /* QUESTIONS */
 .plan-collection {
+    position: relative;
     display: flex;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 250px;
     margin-top: 0;
 }
 
 /* SIDEBAR */
 
 .questions-sidebar {
-    width: 230px;
     margin-right: 365px;
 }
 
@@ -830,6 +835,75 @@ a {
 .radio:checked ~ .selection-content {
     background-color: #0a775f;
     color: darkmagenta;
+}
+
+
+/* POSITION */
+.alfred-img {
+    position: absolute;
+    left: 638px;
+    top: -82px;
+    width: 160px;
+    height: 160px;
+}
+
+.top-img {
+    position: absolute;
+}
+.center-img {
+    position: absolute;
+    z-index: 1;
+    top: 685px;
+    right: 0;
+}
+
+.center-bg-img {
+    position: absolute;
+    top: 831px;
+    right: 0;
+}
+.bottom-img {
+    position: absolute;
+    left: 0;
+    bottom: 170px;
+}
+
+/* ABOUT */
+.about-top-img {
+    position: absolute;
+    top: 50px;
+}
+
+.top-img-plan {
+    position: absolute;
+    bottom: 25px;
+}
+
+.center-img-plan {
+    position: absolute;
+    top: 176px;
+    right: 0;
+    z-index: 1;
+}
+
+.center-bg-img-plan {
+    position: absolute;
+    top: 276px;
+    right: 0;
+}
+
+/* CHOOSE */
+.choose-op {
+    position: absolute;
+    top: 233px;
+    left: -17px;
+}
+
+/* HOW-WORK */
+.how-work-op {
+    position: absolute;
+    right: 68px;
+    top: 41px;
 }
 
 @media
