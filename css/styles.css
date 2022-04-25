@@ -167,7 +167,7 @@ a {
     margin-bottom: 24px;
 }
 
-.header-bottom-box-text {
+.header-bottom-box-text-main {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
@@ -369,6 +369,8 @@ a {
 }
 
 .how-work-box {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -382,6 +384,17 @@ a {
     border: 4px solid #c99b67;
     content: "";
     margin-bottom: 20px;
+}
+
+.how-work-box:not(:last-child):after {
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+    left: 35px;
+    width: 433px;
+    height: 3px;
+    background-image: url(../img/dashed.svg);
+    content: "";
 }
 
 
@@ -849,47 +862,46 @@ a {
 
 .top-img {
     position: absolute;
+    top: 10;
+    left: -160px;
+    width: 371px;
+    height: 371px;
 }
 .center-img {
     position: absolute;
-    z-index: 1;
+    width: 546px;
+    height: 592px;
     top: 685px;
-    right: 0;
+    right: -328px;
+
 }
 
-.center-bg-img {
-    position: absolute;
-    top: 831px;
-    right: 0;
-}
 .bottom-img {
     position: absolute;
-    left: 0;
+    width: 314px;
+    height: 287px;
+    left: -200px;
     bottom: 170px;
 }
 
 /* ABOUT */
-.about-top-img {
+.about-top-img-op {
     position: absolute;
     top: 50px;
 }
 
+/* PLAN */
 .top-img-plan {
     position: absolute;
-    bottom: 25px;
+    left: -220px;
+    bottom: 24px;
 }
 
 .center-img-plan {
     position: absolute;
     top: 176px;
-    right: 0;
-    z-index: 1;
-}
+    right: -440px;
 
-.center-bg-img-plan {
-    position: absolute;
-    top: 276px;
-    right: 0;
 }
 
 /* CHOOSE */
@@ -902,6 +914,8 @@ a {
 /* HOW-WORK */
 .how-work-op {
     position: absolute;
+    width: 227px;
+    height: 192px;
     right: 68px;
     top: 41px;
 }
