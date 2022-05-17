@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoffeeRoasters</title>
-    <!-- FONT -->
-    
+    <!-- cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- STYLES -->
-    <!-- <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css"> -->
-    <link rel="stylesheet" href="css/styles.mini.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.mini.css"> -->
 </head>
 <body>
     
@@ -84,14 +85,17 @@
                     </div>
                     
                     <!-- SELECTED-CARD -->
-                    <form action="">
+                    <form class="form" action="">
                         <section class="selection-cards">
+                            <!-- Preferences -->
                             <div class="selection-card">
                                 <div class="selection-card-header" id="preferences">
-                                    <h3 class="questions-consumer-heading">How do you drink your coffee?</h3>
-                                    <button class="down-icon"></button>
+                                    <h3 class="questions-consumer-heading">How do you drink your coffee?
+                                        <i class="down-icon fa-solid fa-angle-down"></i>
+                                    </h3> 
                                 </div>
-                                <div class="selections selections-open">
+                                <!-- Labels  -->
+                                <div class="selections ">
                                     <label class="selection" for="capsule">
                                         <input class="radio" type="radio" name="how-drink" value="capsule" id="capsule">
                                             <span class="selection-content">
@@ -118,12 +122,16 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <!-- BEAN-TYPE -->
                             <div class="selection-card">
                                 <div class="selection-card-header" id="bean-type">
-                                    <h3 class="questions-consumer-heading">What type of coffee?</h3>
-                                    <button class="down-icon"></button>
+                                    <h3 class="questions-consumer-heading">What type of coffee?
+                                        <i class="down-icon fa-solid fa-angle-down"></i>
+                                    </h3>
                                 </div>
-                                <div class="selections">
+
+                                <div class="selections visually-hidden">
                                     <label class="selection" for="origin">
                                         <input class="radio" type="radio" name="type" value="origin" id="origin">
                                             <span class="selection-content">
@@ -150,12 +158,16 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <!-- Quantity -->
                             <div class="selection-card">
                                 <div class="selection-card-header" id="quanity">
-                                    <h3 class="questions-consumer-heading">How much would you like?</h3>
-                                    <button class="down-icon"></button>
+                                    <h3 class="questions-consumer-heading">How much would you like?
+                                        <i class="down-icon fa-solid fa-angle-down"></i>
+                                    </h3>
                                 </div>
-                                <div class="selections">
+
+                                <div class="selections visually-hidden">
                                     <label class="selection" for="250g">
                                         <input class="radio" type="radio" name="how-much" value="250g" id="250g">
                                             <span class="selection-content">
@@ -182,12 +194,16 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <!-- Grind-option -->
                             <div class="selection-card">
                                 <div class="selection-card-header" id="grind-option">
-                                    <h3 class="questions-consumer-heading">Want us to grind them?</h3>
-                                    <button class="down-icon"></button>
+                                    <h3 class="questions-consumer-heading">Want us to grind them?
+                                        <i class="down-icon fa-solid fa-angle-down"></i>
+                                    </h3>
                                 </div>
-                                <div class="selections">
+
+                                <div class="selections visually-hidden">
                                     <label class="selection" for="wholebean">
                                         <input class="radio" type="radio" name="grind" value="wholebean" id="wholebean">
                                             <span class="selection-content">
@@ -214,12 +230,16 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <!-- Deliveries -->
                             <div class="selection-card-last-child">
                                 <div class="selection-card-header" id="deliveries">
-                                    <h3 class="questions-consumer-heading">How often should we deliver?</h3>
-                                    <button class="down-icon"></button>
+                                    <h3 class="questions-consumer-heading">How often should we deliver?
+                                        <i class="down-icon fa-solid fa-angle-down"></i>
+                                    </h3>
                                 </div>
-                                <div class="selections">
+
+                                <div class="selections visually-hidden">
                                     <label class="selection" for="every-week">
                                         <input class="radio" type="radio" name="how-often" value="every-week" id="every-week">
                                             <span class="selection-content">
@@ -246,13 +266,14 @@
                                     </label>
                                 </div>
                             </div>
-                            <!-- ORDER-SUMMARY -->
-                            <div class="order-summery">
-                                <h3 class="order-summary-heading">Order Summary</h3>
-                                <div class="order-summary-text">“I drink my coffee using _____ , with a _____ type of bean. _____ , sent to me _____.”</div>
-                            </div>
-                            <button type="submit" class="main-link btn-main-link">Create me plan</button>
                         </section>
+
+                        <!-- ORDER-SUMMARY -->
+                        <div class="order-summery">
+                            <h3 class="order-summary-heading">Order Summary</h3>
+                            <div class="order-summary-text">“I drink my coffee using _____ , with a _____ type of bean. _____ , sent to me _____.”</div>
+                        </div>
+                        <button type="submit" class="main-link btn-main-link">Create me plan</button>
                     </form>
 
                 </div>
@@ -294,5 +315,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html> 
