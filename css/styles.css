@@ -65,6 +65,10 @@ a {
     text-decoration: none;
 }
 
+strong {
+    color: #333;
+}
+
 .container {
     width: 100%;
     max-width: 1440px;
@@ -789,7 +793,7 @@ a {
     margin-left: -18px;
 } 
 
-.selection {
+.selection-content {
     width: 208px;
     height: 220px;
     background-color: rgba(10, 119, 95, 0.2);   
@@ -806,9 +810,13 @@ a {
     display: none;
 }
 
+.selection-content {
+    display: block;
+}
+
 .radio:checked ~ .selection-content {
     background-color: #0a775f;
-    color: #C99B67;
+    color: #fff;
 }
 
 .selection-heading {
